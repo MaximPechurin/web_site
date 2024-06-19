@@ -1,0 +1,94 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Умный дом</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/smart.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/ddos_logo.png' %}" alt="Логотип">
+        <span class="logo">Maxim</span>
+        <span class="logo2">Pechurin</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-table"></i> О нас</li></a>
+            <a href="{% url 'smart' %}"><li><i class="far fa-lightbulb"></i> Умный дом</li></a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}"><li><i class="fas fa-user-circle"></i>Logout</li></a>
+            {% else %}
+                <a href="{% url 'login' %}"><li><i class="fas fa-user-circle"></i>Login</li></a>
+            {% endif %}
+            <li><i class="fas fa-user-tie"></i>Пользователь: {{ user }}</li>
+        </ul>
+        <style>
+          a {
+          text-decoration: none;
+          }
+        </style>
+    </aside>
+    <main>
+        <div class="smart_features">
+            <h1>Умный Дом</h1>
+            <p></p>
+        </div>
+        <div class="container">
+            <img src="{% static 'main/img/smart_home.jpg' %}" alt="Умный дом" class="image image_smart_home">
+            <a href="https://www.youtube.com/watch?v=OZQAg_-exsQ" target="_blank"><img src="{% static 'main/img/television.png' %}" alt="Телевизор 1" class="image television1"></a>
+            <a href="https://www.youtube.com/watch?v=hD1YtmKXNb4" target="_blank"><img src="{% static 'main/img/television.png' %}" alt="Телевизор 2" class="image television2"></a>
+            <a href="https://igroutka.ru/igry-mashiny/18443-drift-na-bmv.html" target="_blank"><img src="{% static 'main/img/computer.png' %}" alt="Компуктер" class="image computer1"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_smoke.jpg' %}" alt="Датчик дыма 1" class="image danger_smoke1"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_smoke.jpg' %}" alt="Датчик дыма 2" class="image danger_smoke2"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_smoke.jpg' %}" alt="Датчик дыма 3" class="image danger_smoke3"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_blaze.png' %}" alt="Датчик огня 1" class="image danger_blaze1"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_blaze.png' %}" alt="Датчик огня 2" class="image danger_blaze2"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_blaze.png' %}" alt="Датчик огня 3" class="image danger_blaze3"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_water.jpg' %}" alt="Датчик воды 1" class="image danger_water1"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_water.jpg' %}" alt="Датчик воды 2" class="image danger_water2"></a>
+            <a href="https://zvukogram.com/zvuk/47386/" target="_blank"><img src="{% static 'main/img/danger_water.jpg' %}" alt="Датчик воды 3" class="image danger_water3"></a>
+            <a href="https://www.ixbt.com/digimage/pelengkepler/pIMG_1354.jpg" target="_blank"><img src="{% static 'main/img/camera.png' %}" alt="Камера наблюдения" class="image camera"></a>
+            <a href="https://zvukogram.com/zvuk/24413/" target="_blank"><img src="{% static 'main/img/signalization.png' %}" alt="Сигнализация" class="image signalization"></a>
+        </div>
+        <div class="container-cifri">
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/1-circle-c.png" alt="1-circle-c" class="cif1"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/2-circle-c.png" alt="2-circle-c" class="cif2"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/3-circle-c.png" alt="3-circle-c" class="cif3"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/4-circle-c.png" alt="4-circle-c" class="cif4"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/5-circle-c.png" alt="5-circle-c" class="cif5"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/6-circle-c.png" alt="6-circle-c" class="cif6"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/7-circle-c.png" alt="7-circle-c" class="cif7"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/8-circle-c.png" alt="8-circle-c" class="cif8"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/9-circle-c.png" alt="9-circle-c" class="cif9"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/10-circled-c.png" alt="10-circled-c" class="cif10"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/11-circled-c.png" alt="11-circled-c" class="cif11"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/12-circled-c.png" alt="12-circled-c" class="cif12"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/13-circled-c.png" alt="13-circled-c" class="cif13"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/14-circled-c.png" alt="14-circled-c" class="cif14"/>
+        </div>
+        <div class="container-mif-from-house">
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/1-circle-c.png" alt="1-circle-c" class="mif1"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/2-circle-c.png" alt="2-circle-c" class="mif2"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/3-circle-c.png" alt="3-circle-c" class="mif3"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/4-circle-c.png" alt="4-circle-c" class="mif4"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/5-circle-c.png" alt="5-circle-c" class="mif5"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/6-circle-c.png" alt="6-circle-c" class="mif6"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/7-circle-c.png" alt="7-circle-c" class="mif7"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/8-circle-c.png" alt="8-circle-c" class="mif8"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/9-circle-c.png" alt="9-circle-c" class="mif9"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/10-circled-c.png" alt="10-circled-c" class="mif10"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/11-circled-c.png" alt="11-circled-c" class="mif11"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/12-circled-c.png" alt="12-circled-c" class="mif12"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/13-circled-c.png" alt="13-circled-c" class="mif13"/>
+            <img width="48" height="48" src="https://img.icons8.com/badges/48/14-circled-c.png" alt="14-circled-c" class="mif14"/>
+        </div>
+    </main>
+
+</body>
+</html>

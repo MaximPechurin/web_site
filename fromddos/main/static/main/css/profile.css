@@ -1,0 +1,145 @@
+body{
+    background-image: url("https://postroiki.cdnbro.com/posts/730477-neonovyi-interer-46.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+aside{
+    float: left;
+    background: #181818;
+    width: 15%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+
+aside img {
+    width: 75px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 20px;
+    margin-left: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+aside .logo2 {
+    font-size: 20px;
+    margin-left: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 6px;
+}
+
+aside h3{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {list-style: none}
+aside ul li{
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.profile_features{
+    position: relative;
+    color: #FFFAF0;
+    margin-left: 250px;
+    top: 100px;
+    text-align: center;
+    width: 80%;
+}
+
+.card{
+    border:none;
+    margin-top: 150px;
+    margin-left: 150px;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:80%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:80%;
+    background-color:#8E24AA;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:#8E24AA;
+    font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #8E24AA !important;
+       color:#8E24AA;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #8E24AA !important;
+       color:#fff;
+       height:40px;
+       background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA;
+       color:#fff;
+        height:40px;
+}

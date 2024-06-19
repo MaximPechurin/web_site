@@ -1,0 +1,471 @@
+body{
+    background-image: url("https://postroiki.cdnbro.com/posts/730477-neonovyi-interer-46.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+aside{
+    float: left;
+    background: #181818;
+    width: 15%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+
+aside img {
+    width: 75px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 20px;
+    margin-left: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+aside .logo2 {
+    font-size: 20px;
+    margin-left: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 6px;
+}
+
+aside h3{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {list-style: none}
+aside ul li{
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+main .smart_features {
+    float: right;
+    position: relative;
+    color: #FFFAF0;
+    margin-top: 90px;
+    text-align: center;
+    width: 80%;
+}
+
+main .smart_features h1 {font-size: 45px; margin-top: -70px;}
+main .smart_features p {max-width: 660px; margin: 20px auto;}
+
+
+.container{
+    position: relative;
+}
+.image {
+
+}
+
+.image_smart_home {
+    position: absolute;
+    width: 1250px;
+    height: 820px;
+    top: 100px;
+    left: 200px;
+}
+
+.television1 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 650px;
+    left: 1030px;
+}
+
+.television2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 400px;
+    left: 280px;
+}
+
+.computer1 {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    top: 230px;
+    left: 1200px;
+}
+
+.danger_smoke1 {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    top: 190px;
+    left: 1060px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.danger_smoke2 {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    top: 175px;
+    left: 340px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.danger_smoke3 {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    top: 650px;
+    left: 340px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.danger_blaze1 {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    top: 150px;
+    left: 430px;
+}
+
+.danger_blaze2 {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    top: 700px;
+    left: 400px;
+}
+
+.danger_blaze3 {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    top: 190px;
+    left: 1150px;
+}
+
+.danger_water1 {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 130px;
+    left: 670px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.danger_water2 {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 130px;
+    left: 520px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.danger_water3 {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 690px;
+    left: 920px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.camera {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    top: 525px;
+    left: 1320px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.signalization {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    top: 500px;
+    left: 360px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container-cifri {
+    position: relative;
+}
+
+.cif1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 215px;
+    left: 630px;
+}
+
+.cif2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 190px;
+    left: 733px;
+}
+
+.cif3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 160px;
+    left: 810px;
+}
+
+.cif4 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 160px;
+    left: 955px;
+}
+
+.cif5 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 230px;
+    left: 1350px;
+}
+
+.cif6 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 230px;
+    left: 1450px;
+}
+
+.cif7 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 279px;
+    left: 1500px;
+}
+
+.cif8 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 705px;
+    left: 1330px;
+}
+
+.cif9 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 725px;
+    left: 1210px;
+}
+
+
+.cif10 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 735px;
+    left: 700px;
+}
+
+.cif11 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 695px;
+    left: 630px;
+}
+
+.cif12 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 455px;
+    left: 580px;
+}
+
+.cif13 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 575px;
+    left: 1610px;
+}
+
+.cif14 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 535px;
+    left: 640px;
+}
+
+.container-mif-from-house {
+    position: relative;
+}
+
+.mif1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 320px;
+    left: 760px;
+}
+
+.mif2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 350px;
+    left: 760px;
+}
+
+.mif3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 350px;
+    left: 1000px;
+}
+
+.mif4 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 300px;
+    left: 1070px;
+}
+
+.mif5 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 350px;
+    left: 1300px;
+}
+
+.mif6 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 360px;
+    left: 1350px;
+}
+
+.mif7 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 370px;
+    left: 1200px;
+}
+
+.mif8 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 550px;
+    left: 1380px;
+}
+
+.mif9 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 470px;
+    left: 1190px;
+}
+
+.mif10 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 470px;
+    left: 1000px;
+}
+
+.mif11 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 500px;
+    left: 1000px;
+}
+
+.mif12 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 360px;
+    left: 900px;
+}
+
+.mif13 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 450px;
+    left: 1620px;
+}
+
+.mif14 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 460px;
+    left: 780px;
+}
+
+main .image-button {
+    width: 40px;
+    height: 40px;
+}

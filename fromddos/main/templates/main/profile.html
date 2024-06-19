@@ -1,0 +1,89 @@
+{% load static %}
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/profile.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <script type="javascript" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/ddos_logo.png' %}" alt="Логотип">
+        <span class="logo">Maxim</span>
+        <span class="logo2">Pechurin</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-table"></i> О нас</li></a>
+            <a href="{% url 'smart' %}"><li><i class="far fa-lightbulb"></i> Умный дом</li></a>
+            <a href="{% url 'profile' %}"><li><i class="fas fa-user-circle"></i> Профиль</li></a>
+        </ul>
+        <style>
+          a {
+          text-decoration: none;
+          }
+        </style>
+    </aside>
+    <main>
+        <div class="profile_features">
+            <h1>Профиль</h1>
+            <p></p>
+        </div>
+        <div class="container mt-5">
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-7">
+
+                <div class="card p-3 py-4">
+
+                    <div class="text-center">
+                        <img src="https://sun9-62.userapi.com/impg/c858224/v858224966/214c38/B8_uFAbZnmw.jpg?size=1060x1600&quality=96&sign=d028d2bb84c52924dfb780cadad071b3&type=album" width="100" height="100" class="rounded-circle">
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <span class="bg-secondary p-1 px-4 rounded text-white">Junior</span>
+                        <h5 class="mt-2 mb-0">{{ user.username }}</h5>
+                        <span>Frontend/Backend Developer</span>
+
+                        <div class="px-4 mt-1">
+                            <p class="fonts">Является "проживающим" в данной модели веб-приложения управления "Умным домом". Модель выполнена единственным разработчиком - Печуриным Максимом Александровичем. </p>
+
+                        </div>
+
+                         <ul class="social-list">
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-dribbble"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                            <li><i class="fa fa-linkedin"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                        </ul>
+
+                        <div class="buttons">
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </main>
+</body>
+</html>
